@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, type CSSProperties, type ReactNode } from "react";
-import logo from "@/assets/els-logo.png.asset.json";
-import googleReview from "@/assets/google-review.png.asset.json";
-import googleMaps from "@/assets/google-maps.png.asset.json";
+import logo from "@/assets/els-logo.png";
+import googleReview from "@/assets/google-review.png";
+import googleMaps from "@/assets/google-maps.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,7 +24,7 @@ const LINKS = {
   review: "https://g.page/r/CVXlb93DArF0EBM/review",
   maps: "https://www.google.com/maps/dir//Els+Modas+Roupas+Infantil+%26+Adulto+%7C+Caucaia-Fortaleza,+R.+Estados+Unidos,+1002+-+Parque+das+Nacoes,+Caucaia+-+CE,+61642-140/@-3.7724916,-38.5460262,31424m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x7c74bf77e37b411:0x74b102c3dd6fe555!2m2!1d-38.6092362!2d-3.7448108!3e0?hl=pt-BR",
   post: "https://www.instagram.com/p/DZXj-1NRwlm/",
-  localway: "[LINK_LOCALWAY]",
+  localway: "https://localway.com.br",
 };
 
 const PARTICLE_COLORS = ["bg-lilac", "bg-violet/60", "bg-primary/40", "bg-gold/70", "bg-lilac/70"];
@@ -172,7 +172,7 @@ function Index() {
             />
           ))}
           <img
-            src={logo.url}
+            src={logo}
             alt="Logo ELS MODAS"
             width={788}
             height={795}
@@ -192,8 +192,8 @@ function Index() {
         <section aria-label="Canais oficiais" className="mt-12 grid w-full gap-4 sm:grid-cols-2 sm:gap-5">
           <ActionCard primary href={LINKS.whatsapp} label="Falar pelo WhatsApp" delay={0.4} title="Falar pelo WhatsApp" subtitle="Atendimento e catálogo" icon={<WhatsAppIcon />} />
           <ActionCard href={LINKS.instagram} label="Abrir Instagram da ELS MODAS" delay={0.5} title="Instagram" subtitle="@elsmodasoficial" icon={<InstagramIcon />} />
-          <ActionCard href={LINKS.review} label="Avaliar a ELS MODAS no Google" delay={0.6} title="Avalie a ELS MODAS no Google" subtitle="Sua avaliação ajuda muito a nossa loja 💜" icon={<img src={googleReview.url} alt="" className="h-10 w-10 object-contain" />} />
-          <ActionCard href={LINKS.maps} label="Como chegar pelo Google Maps" delay={0.7} title="Como chegar" subtitle="Rua Estados Unidos, 1002 — Caucaia" icon={<img src={googleMaps.url} alt="" className="h-8 w-8 object-contain" />} />
+          <ActionCard href={LINKS.review} label="Avaliar a ELS MODAS no Google" delay={0.6} title="Avalie a ELS MODAS no Google" subtitle="Sua avaliação ajuda muito a nossa loja 💜" icon={<img src={googleReview} alt="" className="h-10 w-10 object-contain" />} />
+          <ActionCard href={LINKS.maps} label="Como chegar pelo Google Maps" delay={0.7} title="Como chegar" subtitle="Rua Estados Unidos, 1002 — Caucaia" icon={<img src={googleMaps} alt="" className="h-8 w-8 object-contain" />} />
         </section>
 
         {/* Instagram */}

@@ -176,7 +176,7 @@ function Index() {
             alt="Logo ELS MODAS"
             width={788}
             height={795}
-            className="relative h-auto w-48 drop-shadow-[0_20px_35px_color-mix(in_oklab,var(--primary)_35%,transparent)] sm:w-56"
+            className="relative h-auto w-48 rounded-full drop-shadow-[0_20px_35px_color-mix(in_oklab,var(--primary)_35%,transparent)] sm:w-56"
           />
         </div>
 
